@@ -1,0 +1,33 @@
+﻿@model IEnumerable<HuntingLog>
+
+﻿<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-10">
+            <h2 class="text-primary">Zombie Type</h2>
+        </div>
+        <div class="col-2 text-right">
+            <a class="btn btn-success" asp-controller="HuntingLog" asp-action="Upsert">
+                Create New HuntingLog
+            </a>
+        </div>
+    </div>
+
+    <br /><br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead class="bg-dark text-white">
+            <tr>
+                <th>
+                    Type Name
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @Html.ActionLink("Edit", "Upsert", new { /* id = item.WeaponId } */}) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            
+        </tbody>
+    </table>
+</div>
