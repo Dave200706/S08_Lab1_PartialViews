@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Zombie>
 
-@* <div class="container p-3">
+ <div class="container p-3">
     <div class="row pt-4">
         <div class="col-10">
             <h2 class="text-primary">Zombie</h2>
@@ -11,7 +11,7 @@
             </a>
         </div>
     </div>
-
+    @*
     <div class="row">
         @foreach (var item in Model)
         {
@@ -30,8 +30,8 @@
                 </div>
             </div>
         }
-    </div>
-</div> *@
+    </div>*@
+</div> 
 
 <div class="row">
     @*  POUR CHAQUE ZOMBIE:*@
@@ -39,5 +39,6 @@
     {
         <partial name="_ZombieCard" model="item" />
     }
+
 </div>
 
